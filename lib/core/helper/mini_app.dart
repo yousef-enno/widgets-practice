@@ -1,17 +1,18 @@
 // import 'package:flutter/material.dart';
 
-// class MiniApp extends StatefulWidget {
-//   const MiniApp({super.key});
+// class WidgetOne extends StatefulWidget {
+//   const WidgetOne({super.key});
 
 //   @override
-//   State<MiniApp> createState() => _MiniAppState();
+//   State<WidgetOne> createState() => _WidgetOne();
 // }
 
-// class _MiniAppState extends State<MiniApp> {
+// class _WidgetOne extends State<WidgetOne> {
 //   String message = 'test camera';
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
+//       appBar: AppBar(title: Text('Widget One'),),
 //       body: Column(
 //         children: [
 //           Container(
@@ -55,14 +56,14 @@
 
 // import 'package:flutter/material.dart';
 
-// class MiniApp extends StatefulWidget {
-//   const MiniApp({super.key});
+// class WidgetTwo extends StatefulWidget {
+//   const WidgetTwo({super.key});
 
 //   @override
-//   State<MiniApp> createState() => _MiniAppState();
+//   State<WidgetTwo> createState() => _WidgetTwoState();
 // }
 
-// class _MiniAppState extends State<MiniApp> {
+// class _WidgetTwoState extends State<WidgetTwo> {
 //   double targetValue = 100;
 //   @override
 //   Widget build(BuildContext context) {
@@ -93,8 +94,8 @@
 // import 'package:flutter/material.dart';
 // import 'package:shimmer/shimmer.dart';
 
-// class MiniApp extends StatelessWidget {
-//   const MiniApp({super.key});
+// class WidgetThree extends StatelessWidget {
+//   const WidgetThree({super.key});
 
 //   @override
 //   Widget build(BuildContext context) {

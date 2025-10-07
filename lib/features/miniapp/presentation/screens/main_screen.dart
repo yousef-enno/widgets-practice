@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_exploration/core/routes/routes.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class MainScreen extends StatelessWidget {
+  const MainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
 
           children: [
             GestureDetector(
-              onTap: () => Navigator.pushNamed(context, Routes.challenge1),
+              onTap: () => Navigator.pushNamed(context, Routes.widget1),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.deepPurple,
@@ -25,7 +25,7 @@ class HomeView extends StatelessWidget {
 
                 child: Center(
                   child: Text(
-                    'challenge 1',
+                    'Widget 1',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -34,7 +34,7 @@ class HomeView extends StatelessWidget {
             SizedBox(height: 20),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, Routes.challenge2);
+                Navigator.pushNamed(context, Routes.widget2);
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -46,32 +46,16 @@ class HomeView extends StatelessWidget {
 
                 child: Center(
                   child: Text(
-                    'challenge 2',
+                    'Widget 2',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
               ),
             ),
             SizedBox(height: 20),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.deepPurple,
-                borderRadius: BorderRadius.circular(16),
-              ),
-              height: 35,
-              width: 120,
-
-              child: Center(
-                child: Text(
-                  'challenge 3',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            SizedBox(height: 200),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, Routes.miniApp);
+                Navigator.pushNamed(context, Routes.widget3);
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -80,15 +64,15 @@ class HomeView extends StatelessWidget {
                 ),
                 height: 35,
                 width: 120,
+
                 child: Center(
                   child: Text(
-                    'Mini App',
+                    'Widget 3',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
               ),
             ),
-            SizedBox(height: 40),
           ],
         ),
       ),
